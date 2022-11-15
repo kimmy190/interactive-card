@@ -1,0 +1,178 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box; 
+    font-family: 'Lato', sans-serif;
+}
+/* initializing all the default styles aplied to html elements */ 
+
+.main{
+    display:flex;
+
+}
+.sec1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(238,174,202);
+    background: linear-gradient(292deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    position:relative;
+}
+
+
+img{
+    position:relative;
+    margin:20px;
+    width:100%;
+    left:40%;
+    
+}
+
+.card_num.txt{
+    font-size:30px;
+    color:white;
+    position: absolute;
+    width:100%;
+    top: 37%;
+    left: 45%;
+    padding-left:50px;
+}
+
+
+.oneline-txt{
+    font-size:17px;
+    color:white;
+    position: absolute;
+    /* want the input text stay in one line */
+    width:100%; 
+    top: 44%;
+    left: 45%;
+    padding: 0 20px;
+    padding-right:27px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.date-container{
+    display: flex;
+}
+
+.cvcn.txt{
+    color:white;
+    font-size:17px;
+    position: absolute;
+    display: inline-block;
+    bottom: 34.5%;
+    left: 126%;
+}
+
+.sec2{
+    
+    display: flex;
+    flex:2;
+    margin: auto;
+    height:100vh;
+}
+
+
+.card-info{
+    /* background-color: lightblue; */
+    /* align items in a colum direction per flexbox items */
+    display:flex;
+    flex-direction: column;
+    width:500px;
+    margin:auto;
+    height:450px;
+    justify-content: space-between;
+    
+}
+
+.date-cvc{
+    display:flex; 
+    width: 100%;
+}
+
+.error{
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0px 0px 4px 1px red; 
+    border:1px red;
+}
+
+.invalid{
+    height:10px;
+    margin-top:7px;
+    color:red;
+    font-size:13px;
+}
+
+.date{
+    width: 100%;
+    margin-right:10px;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+}
+
+.box input{
+    width:100%;
+}
+
+#month{
+    margin-right:5px;
+}
+
+.cvc{
+    width: 100%;
+    margin-left:10px;
+}
+.cvc input{
+    width:100%;
+}
+
+input, button{
+    height:60px;
+    margin-top:9px;
+    border-radius: 10px;
+    border:none;
+}
+
+input{
+    padding-left:16px;
+    font-size:20px;
+    border:1px solid grey;
+}
+
+input[type=text]:focus {
+    border: 1px solid black;
+}
+
+button{
+    font-size:30px;
+}
+
+
+.header{
+    font-size:15px;
+}
+
+.confirm{
+    width:100%;
+    font-size:16px;
+    color:white;
+    background-color:blueviolet;
+    transition-duration: 0.35s;
+}
+
+.confirm:hover{
+    background-color: rgb(79, 17, 137);
+    cursor:pointer;
+
+}
+
+
+#carholder_name, #card_num{
+    width:100%;
+}
