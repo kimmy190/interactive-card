@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Card UI</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="main">
+
+    
+        <div class="sec1">
+
+            <img src="./interactive-card-details-form-main/images/bg-card-front.png" id="front-pic" alt="frontofcard">
+            <div class="card_num txt">1234 5678 0912 3456</div>
+            
+            <div class="oneline-txt">
+                <div class="carholder_name txt">Jane Anderson</div>
+                <div class="date-container">
+                    <div class="month txt">MM</div>/
+                    <div class="year txt">YY</div>
+                </div>
+                
+            </div>
+            
+            <img src="./interactive-card-details-form-main/images/bg-card-back.png" id="back-pic" alt="backofcard">
+            <div class="cvcn txt">124</div>
+        </div>
+        
+
+        
+        <div class="sec2">
+            <div class="card-info">
+
+                <div class="name header">CARDHOLDER NAME<br>
+                    <input type="text" value="e.g Jane Anderson" id="carholder_name">
+                    <div class="carholder_name invalid"></div>
+                </div>
+
+                <div class="number header">CARD NUMBER<br>
+                    <input type="text" value="e.g 1234 5678 0912 4543" id="card_num">
+                    <div class="card_num invalid"></div>
+                </div>
+                
+                <!-- <section class="date-cvc"> -->
+                <div class="date-cvc">
+                    <div class="date header">
+                        EXPIRARY DATE (MM/YY)<br>
+                        <div class="box">
+                            <input type="text" value="MM" id="month" minlength="2" maxlength="2">
+                            <input type="text" value="YY" id="year" minlength="2" maxlength="2">
+                        </div>
+                        <div class="month year invalid"></div>
+                    </div>
+                    
+                    <div class="cvc header">
+                        CVC<br>
+                        <input type="text" value="e.g 124" id="cvcn" minlength="3" maxlength="3">
+                        <div class="cvcn invalid"></div>
+                    </div>
+                </div>
+                <a class="confirmed_page" href="confirmed.html">
+                    <button class="confirm header" type="button">CONFIRM</button>
+                </a>
+                <!-- <div class="confirm"><button type="button">Confirm</button></div> -->
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
